@@ -73,7 +73,7 @@ img{max-width:100%;}
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
 }
-.top-nav li.active> a, .top-nav li> a:hover {
+.top-nav li.active {
 	border-top: 5px solid #11B674;
 	color: #11B674;
 }
@@ -84,13 +84,19 @@ img.skills-img{
   width: 100px;
   height: 100px;
 }
-
 img.skills-img.express {
-    height: 40px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+  height: 36px;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
-
+img.skills-img.css {
+  width: 70px;
+}
+img.skills-img.mysql{
+	height: 80px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 img.profile-pic {
 	display: block;
 	margin: auto;
@@ -99,7 +105,6 @@ img.profile-pic {
 	height: auto;
   width: auto;
 }
-
 .grid1{
 	background:#11B674;
 	text-align:center;
@@ -284,8 +289,15 @@ img.demo-img.alexa-img {
 	margin: 0px 0px 9px 0px;
 }
 /*----twiiter-box----*/
+.twiiter-box h3 {
+	color: #007747;
+	font-family: 'gandhi_sansregular';
+	font-size: 1.9em;
+	padding: 0px 0px 5px 0px;
+}
 .twiiter-box{
 	padding: 50px 0px;
+	padding-bottom: 300px;
 	text-align:center;
 }
 .twiiter-box p{
@@ -295,16 +307,6 @@ img.demo-img.alexa-img {
 	line-height: 1.8em;
 	padding-bottom: 20px;
 	font-size: 1.2em;
-}
-.twiiter-box p a{
-	color:black;
-	transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
-	font-size: 1.1em;
-}
-.twiiter-box p a:hover{
-	color:#2A323A;
 }
 /*---contact----*/
 .contact{

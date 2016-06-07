@@ -11,14 +11,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
 		<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-		</script>
+		<script type="text/javascript" src="js/main.js"></script>
 		<meta name="viewport" content="width=device-width" />
 	</head>
 	<body>
@@ -35,7 +28,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li class="active"><a href="#me" class="scroll me">Me</a></li>
 					<li><a href="#skills" class="scroll">Skills</a></li>
 					<li><a href="#works" class="scroll">Portfolio</a></li>
-					<li><a href="#contact" class="scroll contact-nav">Blog</a></li>
+					<li><a href="#blog" class="scroll">Blog</a></li>
 				</ul>
 			</div>
 			<div class="clear"> </div>
@@ -44,25 +37,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 		<!---End-wrap--->
 	<div class="content">
-		<div class="grid1" id="me">
-			<a href="#">
-				<img class="profile-pic" src="images/another-ugly-photo.png" title="name" />
-			</a>
-			<h3>Denis Wells</h3>
-			<p>Full Stack Javascript Developer</p>
-		</div>
-		<div class="catch-me">
-			<h3>HELLO</h3>
-			<p class="greeting-subhead">I come from a history of
-				<span class="highlight">muffins</span> and
-				<span class="highlight">movies</span>.</p>
-				<p>By that I mean, I used to be a baker and I stayed sane by watching films as a hobby. Moving on and deciding to start a career as a
-				<span class="highlight">FULL STACK JAVASCRIPT DEVELOPER</span> was one of the easiest decisions I've made. I create, solve, design, and maintain all in a day's work.</p>
-			<ul>
-				<li><a href="https://nz.linkedin.com/in/denis-wells-426726119"><img src="images/linkedin-logo.png" title="linkedin" /></a></li>
-				<li><a href="https://github.com/deniswells59"><img src="images/github-logo.png" title="github" /></a></li>
-				<li><a href="https://twitter.com/deniswells59"><img src="images/twitter-logo.png" title="twitter" /></a></li>
-			</ul>
+		<div id="me">
+			<div class="grid1">
+				<a href="#">
+					<img class="profile-pic" src="images/another-ugly-photo.png" title="name" />
+				</a>
+				<h3>Denis Wells</h3>
+				<p>Full Stack Javascript Developer</p>
+			</div>
+			<div class="catch-me">
+				<h3>HELLO!</h3>
+				<p class="greeting-subhead">I come from a history of
+					<span class="highlight">muffins</span> and
+					<span class="highlight">movies</span>.</p>
+					<p>By that I mean, I used to be a baker and I stayed sane by watching films as a hobby. Moving on and deciding to start a career as a
+					<span class="highlight">FULL STACK JAVASCRIPT DEVELOPER</span> was one of the easiest decisions I've made. I create, solve, design, and maintain all in a day's work.</p>
+				<ul>
+					<li><a href="https://nz.linkedin.com/in/denis-wells-426726119"><img src="images/linkedin-logo.png" title="linkedin" /></a></li>
+					<li><a href="https://github.com/deniswells59"><img src="images/github-logo.png" title="github" /></a></li>
+					<li><a href="https://twitter.com/deniswells59"><img src="images/twitter-logo.png" title="twitter" /></a></li>
+				</ul>
+				<a class="button" href="https://registry.jsonresume.org/deniswells">My Resume</a>
+			</div>
 		</div>
 		<div class="grid2" id="skills">
 			<h3>Skills</h3>
@@ -73,7 +69,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<span>HTML</span>
 				</li>
 				<li>
-					<img class="skills-img" src="images/css-logo.png" title="Artdirector" />
+					<img class="skills-img css" src="images/css-logo.png" title="Artdirector" />
 					<span>CSS</span>
 				</li>
 				<li>
@@ -107,7 +103,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<span>jquery</span>
 				</li>
 				<li>
-					<img class="skills-img sql" src="images/mysql-logo.png" title="Artdirector" />
+					<img class="skills-img mysql" src="images/mysql-logo.png" title="Artdirector" />
 					<span>MySQL</span>
 				</li>
 				<li>
@@ -131,10 +127,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</li>
 			</ul>
 		</div>
-		<div class="grid3">
-			<div class="grid3-header" id="works">
+		<div class="grid3" id="works">
+			<div class="grid3-header">
 				<h3>Portfolio</h3>
-				<p>Things I've worked on or still working on.</p>
+				<p>Things I've worked on (or still working on)</p>
 			</div>
 			<div class="grid3-content">
 				<div class="grid3-right">
@@ -158,7 +154,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="grid3-left">
 					<h3>Mad Libs: Alexa App</h3>
-					 <p>A children's app that utilizes the Amazon Alexa API to create a voice activated app. Using an Amazon Alexa device (like the Echo), users can answer queries for particular parts of speech that will be plugged into a story template. Alexa then recites the entire story with the user's selected words.</p>
+					 <p>A children's app that utilizes the Amazon Alexa API to create a voice operated app. Using an Alexa enabled device (like the Amazon Echo), users can answer queries for particular parts of speech that will be plugged into a story template. Alexa then recites the entire story with the user's selected words.</p>
 					 <p>(Currently waiting to be published)</p>
 					<ul>
 						<li><img class='project-label' src="images/nodejs-logo.png" /></li>
@@ -169,19 +165,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="clear"> </div>
 			</div>
 		</div>
-		<div class="twiiter-box">
+		<div class="twiiter-box" id="blog">
+			<h3>Blog</h3>
+			<p>My little tech blog.</p>
 			<blockquote class="embedly-card" data-card-key="d17a35e07ae544299248069ceac19f44" data-card-controls="0" data-card-type="article"><h4><a href="https://medium.com/@deniswells59">Denis Wells</a></h4><p>Follow the latest activity of Denis Wells on Medium. 1 people are following Denis Wells to see their posts and recommendations.</p></blockquote>
 			<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-		</div>
-		<div class="contact" id="contact">
-			<h3>Feed Back</h3>
-			<p>Reader will be distracted by the readable content of a page when looking at its layout.</p>
-			<form>
-			<input type="text" class="textbox" value="Name:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-			<input type="text" class="textbox" value="Email:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
-			<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-			<input type="submit" value="Send">
-			</form>
 		</div>
 		<div class="footer">
 			<p>Design by <a href="http://w3layouts.com/">w3layouts</a></p>
