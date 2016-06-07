@@ -91,10 +91,13 @@ img.skills-img.express {
     padding-top: 30px;
 }
 
-img.skills-img.materialize{
-	height: 80px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+img.profile-pic {
+	display: block;
+	margin: auto;
+  max-width:200px;
+  max-height:200px;
+	height: auto;
+  width: auto;
 }
 
 .grid1{
