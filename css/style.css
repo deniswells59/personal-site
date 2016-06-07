@@ -171,12 +171,12 @@ p.skill-header {
 	padding: 15px 0px 0px 0px;
 	margin: 0px 3px;
 }
-.grid2 ul li a,.grid2 ul li img{
+.grid2 ul li span,.grid2 ul li img{
 	display:block;
 	text-align: center;
 	margin: 0 auto;
 }
-.grid2 ul li a{
+.grid2 ul li span{
 	font-family: 'gandhi_sansregular';
 	color: #FFFFFF;
 	margin-top: 12px;
@@ -244,6 +244,7 @@ p.skill-header {
 	width: 98%;
 }
 .grid3-right{
+	margin-bottom: 45px;
 	float: right;
 	width: 57%;
 	background: #fff;
@@ -482,11 +483,11 @@ span.highlight{
 		width:90%;
 	}
 	.top-nav ul li a{
-		padding: 20px 20%;
+		padding: 20px 10px;
 	}
-	a.scroll.contact-nav {
-    padding-right: 5px;
-    padding-left: 4px;
+	.top-nav{
+		float: none;
+		text-align: center;
 	}
 	.grid3-content {
 		width: 83%;
@@ -509,7 +510,7 @@ span.highlight{
 	.grid1 p {
 		width: 77%;
 	}
-	.grid2 ul li a {
+	.grid2 ul li span {
 		padding: 8px 23px;
 	}
 	.grid3-right {
