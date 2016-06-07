@@ -309,68 +309,7 @@ img.demo-img.alexa-img {
 	font-size: 1.2em;
 }
 /*---contact----*/
-.contact{
-	background: #7F7E7E;
-	text-align: center;
-	padding: 50px 0px;
-}
-.contact h3{
-	font-family: 'gandhi_sansregular';
-	color: #FFF;
-	font-size: 2.2em;
-	padding-bottom: 4px;
-}
-.contact input[type="text"]{
-	width: 40%;
-	display: inline-block;
-	padding: 10px;
-	margin: 20px 9px;
-	font-family: 'gandhi_sansregular';
-	color: #2A323A;
-	font-size: 1em;
-	outline: none;
-}
-.contact textarea{
-	width: 83%;
-	margin: 0 auto;
-	display: block;
-	padding: 10px;
-	margin-bottom: 20px;
-	height: 120px;
-	font-family: 'gandhi_sansregular';
-	color: #2A323A;
-	font-size: 1em;
-	outline: none;
-}
-.contact p{
-	font-family: 'gandhi_sansregular';
-	color: #FFF;
-	font-size: 1em;
-	line-height: 1.8em;
-	margin-bottom: 3px;
-}
-.contact input[type="submit"]{
-	font-family: 'gandhi_sansregular';
-	color: #FFFFFF;
-	margin-top: 12px;
-	background: #2A323A;
-	display: block;
-	padding: 12px 0px;
-	text-transform: uppercase;
-	font-size: 0.875em;
-	transition: 0.5s ease;
-	-o-transition: 0.5s ease;
-	-webkit-transition: 0.5s ease;
-	border: none;
-	width: 84.3%;
-	margin: 0 auto;
-	outline: none;
-}
-.contact input[type="submit"]:hover{
-	background: #fff;
-	color:#2A323A;
-	cursor:pointer;
-}
+
 .catch-me{
 	background-color: #EEEEEE;
 	text-align:center;
@@ -478,6 +417,14 @@ span.highlight{
 	}
 	.grid1 p {
 		width: 77%;
+	}
+	.grid3-right {
+		width: 100%;
+		float: none;
+	}
+	.grid3-left {
+		width: 100%;
+		float: none;
 	}
 }
 @media only screen and (max-width: 768px) and (min-width: 10px) {
