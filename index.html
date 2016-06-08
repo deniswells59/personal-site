@@ -7,10 +7,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Denis!</title>
-		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<title>Denis Wells</title>
 		<link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+		<link href="css/jquery.modal.css" rel="stylesheet" type="text/css"  media="all" />
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
 		<script type="text/javascript" src="js/main.js"></script>
 		<meta name="viewport" content="width=device-width" />
 	</head>
@@ -19,9 +23,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---start-header--->
 	<div class="header">
 		<div class="wrap">
-			<!---start-logo--->
-
-			<!---End-logo--->
 			<!---start-top-nav--->
 			<div class="top-nav">
 				<ul>
@@ -39,9 +40,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="content">
 		<div id="me">
 			<div class="grid1">
-				<a href="#">
 					<img class="profile-pic" src="images/another-ugly-photo.png" title="name" />
-				</a>
 				<h3>Denis Wells</h3>
 				<p>Full Stack Javascript Developer</p>
 			</div>
@@ -53,11 +52,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<p>By that I mean, I used to be a baker and I stayed sane by watching films as a hobby. Moving on and deciding to start a career as a
 					<span class="highlight">FULL STACK JAVASCRIPT DEVELOPER</span> was one of the easiest decisions I've made. I create, solve, design, and maintain all in a day's work.</p>
 				<ul>
-					<li><a href="https://nz.linkedin.com/in/denis-wells-426726119"><img src="images/linkedin-logo.png" title="linkedin" /></a></li>
-					<li><a href="https://github.com/deniswells59"><img src="images/github-logo.png" title="github" /></a></li>
-					<li><a href="https://twitter.com/deniswells59"><img src="images/twitter-logo.png" title="twitter" /></a></li>
+					<li><a href="https://nz.linkedin.com/in/denis-wells-426726119" target="_blank"><img src="images/linkedin-logo.png" title="linkedin" /></a></li>
+					<li><a href="https://github.com/deniswells59" target="_blank"><img src="images/github-logo.png" title="github" /></a></li>
+					<li><a href="https://twitter.com/deniswells59" target="_blank"><img src="images/twitter-logo.png" title="twitter" /></a></li>
 				</ul>
-				<a class="button" href="https://registry.jsonresume.org/deniswells">My Resume</a>
+				<a class="button" href="https://registry.jsonresume.org/deniswells" target="_blank">Link to Resume</a>
+				<p class="link">OR</p>
+				<p class="link"><a href="#ex1" rel="modal:open">Open it here</a></p>
 			</div>
 		</div>
 		<div class="grid2" id="skills">
@@ -138,29 +139,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="grid3-left">
 					<h3>reflecti.xyz</h3>
-					 <p>A hackathon project that records a user's reaction as they view content (img, gif, etc.). Their reaction is analyzed and an emotion is assigned to it using the <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api">Microsoft Emotion API</a>. The user can then post their reaction to the content.</p>
+					 <p>A hackathon project that records a user's reaction as they view content (img, gif, etc.). Their reaction is analyzed and an emotion is assigned to it using the
+						 <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Microsoft Emotion API</a>.
+						 The user can then post their reaction to the content.</p>
 					 <p>(Currently being refactored with React)</p>
 					<ul>
-						<li><img class='project-label' src="images/angular-logo.png" /></li>
-						<li><img class='project-label' src="images/nodejs-logo.png" /></li>
-						<li><img class='project-label' src="images/mongodb-logo.png" /></li>
-						<li><img class='project-label' src="images/amazon-s3-logo.png" /></li>
+						<li class="tooltip"><img class='project-label' src="images/angular-logo.png" /><span class="tooltiptext">Angular</span></li>
+						<li class="tooltip"><img class='project-label' src="images/nodejs-logo.png" /><span class="tooltiptext">Node</span></li>
+						<li class="tooltip"><img class='project-label' src="images/mongodb-logo.png" /><span class="tooltiptext">MongoDB</span></li>
+						<li class="tooltip"><img class='project-label' src="images/amazon-s3-logo.png" /><span class="tooltiptext">Amazon S3</span></li>
 					</ul>
-					<a class="button" disabled>View Project</a>
-					<a class="button" href="https://github.com/bruno-barbosa/reflecti.xyz">Github</a>
+					<a class="button disabled" disabled>View Project</a>
+					<a class="button" href="https://github.com/bruno-barbosa/reflecti.xyz" target="_blank">Github</a>
 				</div>
 				<div class="grid3-right">
 					<img class="demo-img alexa-img" src="images/alexa-demo.png" title="reflecti" />
 				</div>
 				<div class="grid3-left">
 					<h3>Mad Libs: Alexa App</h3>
-					 <p>A children's app that utilizes the Amazon Alexa API to create a voice operated app. Using an Alexa enabled device (like the Amazon Echo), users can answer queries for particular parts of speech that will be plugged into a story template. Alexa then recites the entire story with the user's selected words.</p>
+					 <p>A children's app that utilizes the
+						<a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit">
+					 Amazon Alexa API </a>
+					to create a voice operated app. Using an Alexa enabled device (like the Amazon Echo), users can answer queries for particular parts of speech that will be plugged into a story template. Alexa then recites the entire story with the user's selected words.</p>
 					 <p>(Currently waiting to be published)</p>
 					<ul>
-						<li><img class='project-label' src="images/nodejs-logo.png" /></li>
-						<li><img class='project-label' src="images/alexa-logo.png" /></li>
+						<li class="tooltip"><img class='project-label' src="images/nodejs-logo.png" /><span class="tooltiptext">Node</span></li>
+						<li class="tooltip"><img class='project-label' src="images/alexa-logo.png" /><span class="tooltiptext">Alexa</span></li>
 					</ul>
-					<a class="button" href="https://github.com/deniswells59/alexa-mad-libs">Github</a>
+					<a class="button" href="https://github.com/deniswells59/alexa-mad-libs" target="_blank">Github</a>
 				</div>
 				<div class="clear"> </div>
 			</div>
@@ -172,8 +178,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 		</div>
 		<div class="footer">
-			<p>Design by <a href="http://w3layouts.com/">w3layouts</a></p>
 		</div>
 	</div>
+
+	<div id="ex1" style="display:none;">
+    <iframe src="documents/Denis Wells Resume.pdf" height="500" width="400"></iframe>
+  </div>
+
 	</body>
 </html>

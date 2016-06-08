@@ -105,6 +105,10 @@ img.profile-pic {
 	height: auto;
   width: auto;
 }
+.catch-me p.link {
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
 .grid1{
 	background:#11B674;
 	text-align:center;
@@ -280,6 +284,27 @@ img.demo-img.alexa-img {
 	transition: 0.5s ease;
 	-o-transition: 0.5s ease;
 	-webkit-transition: 0.5s ease;
+}
+a.button.disabled, .button.disabled:hover {
+	color: white;
+  background: rgba(17, 182, 116, 0.46);
+}
+.tooltip .tooltiptext {
+	font-family: 'gandhi_sansregular';
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(10, 10, 11, 0.85);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 .button:hover{
 	background: #007747;
