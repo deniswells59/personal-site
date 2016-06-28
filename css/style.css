@@ -322,7 +322,7 @@ a.button.disabled, .button.disabled:hover {
 }
 .twiiter-box{
 	padding: 50px 0px;
-	padding-bottom: 300px;
+	padding-bottom: 350px;
 	text-align:center;
 }
 .twiiter-box p{
@@ -371,10 +371,16 @@ span.highlight{
 	display: block;
 	margin: 0px 5px;
 }
-.catch-me ul li a img{
+#top ul li a img{
 	height: 80px;
 	width: 80px;
 	border-radius: 20%;
+	background-color: #11B674;
+}
+#top ul li {
+	display: inline-block;
+}
+#top ul li a img.githubImg {
 	background-color: black;
 }
 /*----footer----*/

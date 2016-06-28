@@ -26,9 +26,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!---start-top-nav--->
 			<div class="top-nav">
 				<ul>
-					<li class="active"><a href="#me" class="scroll me">Me</a></li>
-					<li><a href="#skills" class="scroll">Skills</a></li>
 					<li><a href="#works" class="scroll">Portfolio</a></li>
+					<li><a href="#skills" class="scroll">Skills</a></li>
+					<li><a href="#me" class="scroll me">Me</a></li>
 					<li><a href="#blog" class="scroll">Blog</a></li>
 				</ul>
 			</div>
@@ -38,27 +38,57 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 		<!---End-wrap--->
 	<div class="content">
-		<div id="me">
+		<div id="top">
 			<div class="grid1">
 					<img class="profile-pic" src="images/ugly_photo.png" title="name" />
 				<h3>Denis Wells</h3>
 				<p>Full Stack Javascript Developer</p>
-			</div>
-			<div class="catch-me">
-				<h3>HELLO!</h3>
-				<p class="greeting-subhead">I come from a history of
-					<span class="highlight">muffins</span> and
-					<span class="highlight">movies</span>.</p>
-					<p>By that I mean, I used to be a baker and I stayed sane by watching films as a hobby. Moving on and deciding to start a career as a
-					<span class="highlight">FULL STACK JAVASCRIPT DEVELOPER</span> was one of the easiest decisions I've made. I create, solve, design, and maintain all in a day's work.</p>
 				<ul>
 					<li><a href="https://nz.linkedin.com/in/denis-wells-426726119" target="_blank"><img src="images/linkedin-logo.png" title="linkedin" /></a></li>
-					<li><a href="https://github.com/deniswells59" target="_blank"><img src="images/github-logo.png" title="github" /></a></li>
+					<li><a href="https://github.com/deniswells59" target="_blank"><img class="githubImg" src="images/github-logo.png" title="github" /></a></li>
 					<li><a href="https://twitter.com/deniswells59" target="_blank"><img src="images/twitter-logo.png" title="twitter" /></a></li>
 				</ul>
-				<a class="button" href="https://registry.jsonresume.org/deniswells" target="_blank">Link to Resume</a>
-				<p class="link">OR</p>
-				<p class="link"><a href="#ex1" rel="modal:open">Open it here</a></p>
+			</div>
+		</div>
+		<div class="grid3" id="works">
+			<div class="grid3-header">
+				<h3>Portfolio</h3>
+				<p>Things I've worked on (or still working on)</p>
+			</div>
+			<div class="grid3-content">
+				<div class="grid3-right">
+					<img class="demo-img" src="images/dual-shot.png" title="reflecti" />
+				</div>
+				<div class="grid3-left">
+					<h3>reflecti.xyz</h3>
+					 <p>What started as a hackathon project that records a user's reaction as they view content (img, gif, etc.) has become my first mobile app.
+						 Content is currently provided by a Vine API. Users can also playback the reactions in realtime with the orginal Vine.</p>
+					<ul>
+						<li class="tooltip"><img class='project-label' src="images/react-native-logo.png" /><span class="tooltiptext">Angular</span></li>
+						<li class="tooltip"><img class='project-label' src="images/nodejs-logo.png" /><span class="tooltiptext">Node</span></li>
+						<li class="tooltip"><img class='project-label' src="images/mongodb-logo.png" /><span class="tooltiptext">MongoDB</span></li>
+						<li class="tooltip"><img class='project-label' src="images/amazon-s3-logo.png" /><span class="tooltiptext">Amazon S3</span></li>
+					</ul>
+					<a class="button" href="http://reflecti.xyz">View Project</a>
+					<a class="button" href="https://github.com/Reflecti/reflecti-ios" target="_blank">Github</a>
+				</div>
+				<div class="grid3-right">
+					<img class="demo-img alexa-img" src="images/alexa-demo.png" title="reflecti" />
+				</div>
+				<div class="grid3-left">
+					<h3>Mad Libs: Alexa App</h3>
+					 <p>A children's app that utilizes the
+						<a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit">
+					 Amazon Alexa API </a>
+					to create a voice operated app. Using an Alexa enabled device (like the Amazon Echo), users can answer queries for particular parts of speech that will be plugged into a story template. Alexa then recites the entire story with the user's selected words.</p>
+					 <p>(Currently waiting to be published)</p>
+					<ul>
+						<li class="tooltip"><img class='project-label' src="images/nodejs-logo.png" /><span class="tooltiptext">Node</span></li>
+						<li class="tooltip"><img class='project-label' src="images/alexa-logo.png" /><span class="tooltiptext">Alexa</span></li>
+					</ul>
+					<a class="button" href="https://github.com/deniswells59/alexa-mad-libs" target="_blank">Github</a>
+				</div>
+				<div class="clear"> </div>
 			</div>
 		</div>
 		<div class="grid2" id="skills">
@@ -109,67 +139,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</li>
 				<li>
 					<img class="skills-img" src="images/react-logo.png" title="Artdirector" />
-					<span>React</span>
+					<span>React + React Native</span>
 				</li>
 				<li>
 					<img class="skills-img" src="images/webpack-logo.png" title="Artdirector" />
 					<span>webpack</span>
 				</li>
 			</ul>
-			<p class="skill-header">Currently Learning</p>
-			<ul>
-				<li>
-					<img class="skills-img" src="images/ionic-logo.png" title="Artdirector" />
-					<span>ionic</span>
-				</li>
-				<li>
-					<img class="skills-img" src="images/react-native-logo.png" title="Artdirector" />
-					<span>React Native</span>
-				</li>
-			</ul>
 		</div>
-		<div class="grid3" id="works">
-			<div class="grid3-header">
-				<h3>Portfolio</h3>
-				<p>Things I've worked on (or still working on)</p>
-			</div>
-			<div class="grid3-content">
-				<div class="grid3-right">
-					<img class="demo-img" src="images/reflecti-screenshot.png" title="reflecti" />
-				</div>
-				<div class="grid3-left">
-					<h3>reflecti.xyz</h3>
-					 <p>A hackathon project that records a user's reaction as they view content (img, gif, etc.). Their reaction is analyzed and an emotion is assigned to it using the
-						 <a href="https://www.microsoft.com/cognitive-services/en-us/emotion-api" target="_blank">Microsoft Emotion API</a>.
-						 The user can then post their reaction to the content.</p>
-					 <p>(Currently being refactored with React)</p>
-					<ul>
-						<li class="tooltip"><img class='project-label' src="images/angular-logo.png" /><span class="tooltiptext">Angular</span></li>
-						<li class="tooltip"><img class='project-label' src="images/nodejs-logo.png" /><span class="tooltiptext">Node</span></li>
-						<li class="tooltip"><img class='project-label' src="images/mongodb-logo.png" /><span class="tooltiptext">MongoDB</span></li>
-						<li class="tooltip"><img class='project-label' src="images/amazon-s3-logo.png" /><span class="tooltiptext">Amazon S3</span></li>
-					</ul>
-					<a class="button disabled" disabled>View Project</a>
-					<a class="button" href="https://github.com/bruno-barbosa/reflecti.xyz" target="_blank">Github</a>
-				</div>
-				<div class="grid3-right">
-					<img class="demo-img alexa-img" src="images/alexa-demo.png" title="reflecti" />
-				</div>
-				<div class="grid3-left">
-					<h3>Mad Libs: Alexa App</h3>
-					 <p>A children's app that utilizes the
-						<a href="https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit">
-					 Amazon Alexa API </a>
-					to create a voice operated app. Using an Alexa enabled device (like the Amazon Echo), users can answer queries for particular parts of speech that will be plugged into a story template. Alexa then recites the entire story with the user's selected words.</p>
-					 <p>(Currently waiting to be published)</p>
-					<ul>
-						<li class="tooltip"><img class='project-label' src="images/nodejs-logo.png" /><span class="tooltiptext">Node</span></li>
-						<li class="tooltip"><img class='project-label' src="images/alexa-logo.png" /><span class="tooltiptext">Alexa</span></li>
-					</ul>
-					<a class="button" href="https://github.com/deniswells59/alexa-mad-libs" target="_blank">Github</a>
-				</div>
-				<div class="clear"> </div>
-			</div>
+		<div id="me" class="catch-me">
+			<h3>HELLO!</h3>
+			<p class="greeting-subhead">I come from a history of
+				<span class="highlight">muffins</span> and
+				<span class="highlight">movies</span>.</p>
+				<p>By that I mean, I used to be a baker and I stayed sane by watching films as a hobby. Moving on and deciding to start a career as a
+				<span class="highlight">FULL STACK JAVASCRIPT DEVELOPER</span> was one of the easiest decisions I've made. I create, solve, design, and maintain all in a day's work.</p>
+			<a class="button" href="https://registry.jsonresume.org/deniswells" target="_blank">Link to Resume</a>
+			<p class="link">OR</p>
+			<p class="link"><a href="#ex1" rel="modal:open">Open it here</a></p>
 		</div>
 		<div class="twiiter-box" id="blog">
 			<h3>Blog</h3>
